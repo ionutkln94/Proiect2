@@ -33,4 +33,4 @@ urlpatterns = [
     re_path(r'^supermarket/sign-up/', views.supermarket_sign_up, name='supermarket_sign_up'),
 
     re_path(r'^supermarket/$', views.supermarket_home, name = 'supermarket_home')
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
